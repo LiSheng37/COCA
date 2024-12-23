@@ -46,10 +46,10 @@ test_funciton <- function(j){
   xsim <- xlist.beta1[[j]]
   #data <- somefunction(raw.data)
 #循环跑解雇###
- simutime <- 2000
+ simutime <- 2001
  res <- data.frame(matrix(nrow=0,ncol=6))
  colnames(res) <- c("sensi","speci","ppv","ydi","misclass","power")
- for(i in 1:simutime){
+ for(i in 2:simutime){
   #Dcluster识别
   simu$simupatient <-  simcase1[,i]
   simu$observed <- round(simu$simupatient)
