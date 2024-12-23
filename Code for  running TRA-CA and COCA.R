@@ -35,9 +35,9 @@ expectadjpop1 <- read.table("Population.pop",stringsAsFactors = F,header = F,
                             colClasses = c("character","character","numeric"))
 }
 res <- data.frame(matrix(nrow=0,ncol=13))
-simutime <- 2000
+simutime <- 2001
 colnames(res) <- c("sensi1","sensi2","speci1","speci2","ppv1","ppv2","ydi1","ydi2","misclass1","misclass2","power1","power2","beteadj")
-for(i in 1:simutime){
+for(i in 2:simutime){
   case <- simcase1[,i]
   casepop1$V2 <- case
   write.table(casepop1,file = "Cases.cas",row.names = F,col.names = F)
