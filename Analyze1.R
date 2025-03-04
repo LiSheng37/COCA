@@ -5,9 +5,8 @@ library(ggplot2)
 library(cowplot)
 library(sp)
 
-### There are two file paths that need to be replaced by the user according to the file locations on their own computer.
-td <- setwd("E:/COCA/cov") ### the location of data
-sslocation <- "C:/Program_Files/SaTScan" ### the installation location of the SaTScan software
+td <- setwd("E:/COCA/cov") ### the location of data which needs to be replaced by the user according to the file locations on their own computer.
+sslocation <- "C:/Program_Files/SaTScan" ### the installation location of the SaTScan software which needs to be replaced by the user according to the file locations on their own computer.
 setwd(td) ### set the working directory to the location of data
 load(file = "Simulationdataset.RData") ### Load simulated dataset
 
